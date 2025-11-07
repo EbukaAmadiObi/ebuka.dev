@@ -68,7 +68,7 @@ Currently, working on streamlining the CV tailoring
 process with <a href="https://resumate.cv" target="_blank">Resumate.</a></p>
             </div>
           </div>
-          <img src={hero} className="ml-auto w-[40vw] h-auto object-contain" alt="Vite logo" />
+          <img src={hero} className="ml-auto w-[40vw] h-auto object-contain" alt="Letter pattern" />
         </div>
 
       </div>
