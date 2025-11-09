@@ -10,7 +10,7 @@ function App() {
     },
     {
       path: "/card",
-      element: <Card />,
+      element: <Navigate to="/" replace />,
     },
     {
       path: "*",
