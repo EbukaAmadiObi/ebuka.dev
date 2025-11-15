@@ -48,7 +48,7 @@ function Header() {
 export default function Home() {
     
     return (
-      <div className="w-screen h-screen flex flex-col bg-[#1f0e07]">
+      <div className="w-screen h-dvh flex flex-col bg-[#1f0e07]">
         <Header/>
         <div className='flex flex-col md:flex-row'>
           <div className='h-[60vh] md:h-[calc(100vh-7.5rem)] md:w-[60vw] flex items-center mx-10 md:mx-15 lg:mx-32 relative'>
@@ -97,7 +97,6 @@ export default function Home() {
             <div className="pointer-events-none absolute left-0 bottom-0 w-full h-24 md:h-32 bg-[linear-gradient(to_bottom,#1f0e0700,#1f0e07ff)]" />
           </div>
         </div>
-        <div className="mx-30 my-10 border-b-2 opacity-25"/>
       </div>
     )
 };
