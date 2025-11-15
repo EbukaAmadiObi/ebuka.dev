@@ -48,7 +48,7 @@ function Header() {
 export default function Home() {
     
     return (
-      <div className="w-screen flex flex-col bg-[#1f0e07]">
+      <div className="w-screen h-screen flex flex-col bg-[#1f0e07]">
         <Header/>
         <div className='flex flex-col md:flex-row'>
           <div className='h-[60vh] md:h-[calc(100vh-7.5rem)] md:w-[60vw] flex items-center mx-10 md:mx-15 lg:mx-32 relative'>
