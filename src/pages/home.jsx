@@ -59,10 +59,8 @@ export default function Home() {
               </h3>
               <h1>I build stuff with computers.</h1>
               <br/>
-              <div className="md:text-2xl text-[#ab795e]">I'm a recent graduate of electronic engineering from UCD, 
-                  now I'm working my way into the software industry.
-                  Currently, working on streamlining the CV tailoring 
-                  process with <a href="https://resumate.cv" target="_blank">Resumate.</a>
+              <div className="md:text-2xl text-[#ab795e]">This is my site, here you can find out about my projects, experience and 
+                other cool stuff.
               </div>
               <div className="flex flex-row gap-3 items-center">
                 <a href="https://github.com/EbukaAmadiObi" target="_blank"><AiFillGithub className="text-[#cd9272] size-7 md:size-11"/></a>
@@ -93,9 +91,30 @@ export default function Home() {
                 loading="lazy"
               />
             </picture>
-            {/* Bottom gradient overlay to soften image edge */}
             <div className="pointer-events-none absolute left-0 bottom-0 w-full h-24 md:h-32 bg-[linear-gradient(to_bottom,#1f0e0700,#1f0e07ff)]" />
           </div>
+        </div>
+          <div className="flex flex-row gap-10 w-[calc(0.625*100%)] min-h-screen my-auto mx-auto items-center">
+            <div>
+              <h2>
+                About Me
+              </h2>
+              <div className="my-5 border-b-3 opacity-25 h-1"/>
+              <p>
+                I'm a recent graduate of electronic engineering from UCD, now I'm working my way 
+                into the software industry.<br/> Currently, I'm working on streamlining the CV 
+                tailoring process with <a href="https://resumate.cv" target="_blank">Resumate.</a>
+              </p>
+            </div>
+            <img
+              src="/images/duotone (1).png"
+              className="ml-auto md:w-[20vw]"
+              alt="Personal Portrait"
+              loading="lazy"
+            />
+          </div>
+        <div>
+
         </div>
       </div>
     )
