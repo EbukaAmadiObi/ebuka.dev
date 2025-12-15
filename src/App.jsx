@@ -1,5 +1,5 @@
 import { useRoutes, Navigate } from "react-router-dom";
-import Home from './pages/home';
+import Home from './pages/home/home';
 import Card from './pages/card';
 import Blog from './pages/blog';
 
