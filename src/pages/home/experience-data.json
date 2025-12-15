@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Founder at Resumate",
+    "duration": "Oct 2025 - Present",
+    "description": [
+      "Working on developing a scalable web app using React and Node.js.",
+      "My first time building from the ground up andshipping a product to users, lots to learn."
+    ]
+  },
+  {
+  "title": "Production Engineering Fellow at Meta & MLH",
+    "duration": "Jun 2025 - Sept 2025",
+    "description": [
+      "Set up a Flask-based web app on a CentOS VPS.",
+      "Containerized services (Flask app, database, NGINX reverse proxy) for reliable deployment.",
+      "Got 1:1 mentorship with meta engineers, gaining exposure to industry production engineering techniques."
+    ]
+  },
+  {
+    "title": "Software Engineering Intern at Arista Networks",
+    "duration": "May 2024 - Aug 2024",
+    "description": [
+      "Worked on the Arista CloudVision Platform, helped build new features in Go",
+      "Worked with the rest of the team to ensure seamless integration of new code using Git and Jenkins."
+    ]
+  },
+  {
+    "title": "Assistant Lab Technician at IGSL",
+    "duration": "August 2021 - October 2021",
+    "description": [
+      "Tested of soils, rocks, concrete, and their properties. This mostly took the form of grain size analysis through sieve testing",
+      "Worked with other technicians to assess soil in sites before clearing them for projects like the construction of a new Lidl location."
+    ]
+  }
+]
