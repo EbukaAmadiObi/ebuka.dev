@@ -1,49 +1,7 @@
-import logo from "/logo.svg"
-import { useState, useEffect, useRef } from 'react'
+import Header from "../components/header";
+import Divider from "../components/divider";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillX } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
-
-// About
-// Experience
-// What I'm up to now
-// Projects
-//
-
-function Header() {
-  const [hidden, setHidden] = useState(false)
-  const lastScrollY = useRef(0)
-  const ticking = useRef(false)
-
-  useEffect(() => {
-    function onScroll() {
-      const currentY = window.scrollY || window.pageYOffset
-      if (!ticking.current) {
-        window.requestAnimationFrame(() => {
-          // hide when scrolling down, show when scrolling up
-          if (currentY > lastScrollY.current && currentY > 50) {
-            setHidden(true)
-          } else {
-            setHidden(false)
-          }
-          lastScrollY.current = currentY
-          ticking.current = false
-        })
-        ticking.current = true
-      }
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
-  return (
-    <div
-      className={`sticky top-0 z-50 w-screen max-h-15 md:max-h-30 shadow-2xl flex flex-row items-center p-4 md:p-9 bg-[#1f0e07] transform transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}
-    >
-      <img src={logo} className="w-12 md:w-24" alt="EAO Logo"/>
-    </div>
-  )
-}
 
 export default function Home() {
     
@@ -94,27 +52,30 @@ export default function Home() {
             <div className="pointer-events-none absolute left-0 bottom-0 w-full h-24 md:h-32 bg-[linear-gradient(to_bottom,#1f0e0700,#1f0e07ff)]" />
           </div>
         </div>
-          <div className="flex flex-row gap-10 w-[calc(0.625*100%)] min-h-screen my-auto mx-auto items-center">
-            <div>
-              <h2>
-                About Me
-              </h2>
-              <div className="my-5 border-b-3 opacity-25 h-1"/>
-              <p>
-                I'm a recent graduate of electronic engineering from UCD, now I'm working my way 
-                into the software industry.<br/> Currently, I'm working on streamlining the CV 
-                tailoring process with <a href="https://resumate.cv" target="_blank">Resumate.</a>
-              </p>
-            </div>
-            <img
-              src="/images/duotone (1).png"
-              className="ml-auto md:w-[20vw]"
-              alt="Personal Portrait"
-              loading="lazy"
-            />
+        <div className="flex md:flex-row flex-col md: mt-4 gap-10 w-[calc(0.625*100%)] min-h-screen my-auto mx-auto items-center">
+          <div>
+            <h2>
+              About Me
+            </h2>
+            <div className="my-5 border-b-3 opacity-25 h-1"/>
+            <p>
+              A recent graduate of electronic engineering from UCD, now I'm working on doing 
+              cool stuff with software.<br/> Currently, I'm building an app to streamlining the CV 
+              tailoring process with <a href="https://resumate.cv" target="_blank">Resumate.</a>
+            </p>
           </div>
-        <div>
-
+          <img
+            src="/images/duotone (1).png"
+            className="ml-auto md:w-[20vw]"
+            alt="Personal Portrait"
+            loading="lazy"
+          />
+        </div>
+        <div className="my-10 mb-20 w-[60vw] mx-auto">
+          <h2 className="text-center">
+            Experience
+          </h2>
+          <Divider />
         </div>
       </div>
     )
