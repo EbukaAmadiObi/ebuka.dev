@@ -70,8 +70,8 @@ export default function Home() {
               <TouchHoverCard trigger="Maryland" triggerClassName="text-[#ab795e]">
                 <HoverCardContent className="w-80 bg-[#2a1308] border-[#3e1e0f]">
                   <div className="flex justify-between gap-4">
-                    I spent 8 years there, from age 2 to 10, before moving back to Ireland. Try as I
-                    might, I still haven't fully shaken off the accent...
+                    I spent 8 years there, from age 2 to 10, before moving back to Ireland. Despite 
+                    my efforts I still haven't fully shaken off the accent.
                   </div>
                 </HoverCardContent>
               </TouchHoverCard>.
