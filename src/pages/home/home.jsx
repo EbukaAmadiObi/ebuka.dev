@@ -67,11 +67,11 @@ export default function Home() {
             <p>
               I'm <a href="https://www.linkedin.com/in/ebuka-amadi-obi/" target="_blank">Ebuka Amadi-Obi</a>,
               22, born and living in Dublin, Ireland, save for a few years of my childhood spent in {" "}
-              <TouchHoverCard trigger="Maryland" triggerClassName="text-[#ab795e]">
+              <TouchHoverCard trigger="The US" triggerClassName="text-[#ab795e]">
                 <HoverCardContent className="w-80 bg-[#2a1308] border-[#3e1e0f]">
                   <div className="flex justify-between gap-4">
-                    I spent 8 years there, from age 2 to 10, before moving back to Ireland. Despite 
-                    my efforts I still haven't fully shaken off the accent.
+                    Maryland, specifically. I spent 8 years there from age 2 to 10, before moving 
+                    back to Ireland. Despite my efforts I still haven't fully shaken off the accent.
                   </div>
                 </HoverCardContent>
               </TouchHoverCard>.
