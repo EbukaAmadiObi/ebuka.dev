@@ -12,7 +12,7 @@ import experienceData from "./experience-data.json";
 
 export default function Experience() {
   return (
-  <div className="flex-col my-10 mx-auto colsection pb-20 md:pb-32">
+  <div className="flex-col my-10 mx-auto colsection pb-20">
     <h2 className="text-left">
       Experience
     </h2>
