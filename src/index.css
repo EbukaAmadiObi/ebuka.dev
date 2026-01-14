@@ -29,15 +29,12 @@ a:hover {
   color: #6b2c1b;
 }
 
-p {
-  @apply text-[1rem];
-}
-
 body {
   background: #1f0e07;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  @apply text-[18px];
 }
 
 h1 {
