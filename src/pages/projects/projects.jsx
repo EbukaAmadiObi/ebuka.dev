@@ -14,21 +14,10 @@ export default function Projects() {
           </h2>
           <Divider />
           <div className="flex flex-wrap md:grid-cols-2">
-            <div className="w-full md:w-1/2 p-4">
-              <h3 className="text-xl font-semibold mb-2">Resumate</h3>
-              <p className="text-[#ab795e]">
-                An AI-powered CV tailoring web application that helps users create customized CVs for specific job applications quickly and efficiently.
-              </p>
-            </div>
-            <div className="w-full md:w-1/2 p-4">
-              <h3 className="text-xl font-semibold mb-2">Resumate</h3>
-              <p className="text-[#ab795e]">
-                An AI-powered CV tailoring web application that helps users create customized CVs for specific job applications quickly and efficiently.
-              </p>
-            </div>
-            <div>
-              <ProjectEntry />
-            </div>
+            <ProjectEntry image="/images/resumate-clip.png" title="Resumate" description="An 
+            AI-powered CV tailoring web application that helps users create customized CVs for 
+            specific job applications quickly and efficiently."/>
+            
           </div>
         </div>
       </div>
