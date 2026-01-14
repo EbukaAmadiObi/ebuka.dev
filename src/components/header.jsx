@@ -32,7 +32,17 @@ export default function Header() {
     <div
       className={`sticky top-0 z-50 w-screen max-h-12 md:max-h-12 shadow-2xl flex flex-row items-center p-4 md:p-9 bg-[#1f0e07]/40 backdrop-blur border-[#e5e5f7] transform transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}
     >
-      <img src={logo} className="w-12 md:w-20" alt="EAO Logo"/>
+      <a href="/">
+        <img src={logo} className="w-12 md:w-20" alt="EAO Logo" href="/"/>
+      </a>
+      <div className="w-full flex justify-end gap-5 md:gap-8">
+        <a className="" href="/blog">
+          <h4 className="">Blog</h4>
+        </a>
+        <a className="" href="/projects">
+          <h4 className="">Projects</h4>
+        </a>
+      </div>
     </div>
   )
 }
