@@ -34,7 +34,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  @apply text-[18px];
+  @apply text-[14px] md:text-[18px];
 }
 
 h1 {
