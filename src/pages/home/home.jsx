@@ -121,7 +121,7 @@ export default function Home() {
               Some other cool things I've done:
             </p>
             <ul className="list-disc space-y-1 px-6 list-outside">
-              <li>I was one of 52 student countrywide to be selected as a {" "}
+              <li>I was one of 52 students countrywide to be selected as a {" "}
                 <TouchHoverCard trigger="Web Summit Scholar" triggerClassName="text-[#ab795e]">
                 <HoverCardContent className="w-80 bg-[#2a1308] border-[#3e1e0f]">
                     <p>Great experience, got to attend Web Summit 2025 in Lisbon, meet loads of
@@ -135,7 +135,7 @@ export default function Home() {
               </TouchHoverCard> in Cambridge, hosted by Works in Progress</li>
               <li>I won third in the Dublin Google Hackathon in 2024 and was the regional winner for the {" "}<TouchHoverCard trigger="National AI Challenge 2024" triggerClassName="text-[#ab795e]">
                 <HoverCardContent className="w-80 bg-[#2a1308] border-[#3e1e0f]">
-                    Won me three months of membership to Dogpatch Labs, you'd better believe I made the most of that.
+                    <p>Won me three months of membership to Dogpatch Labs, you'd better believe I made the most of that.</p> <br/> <p>I went down whenever I could, shook hands with as many people as possible. Super thankful for this opportunity, It's how I really started getting involved with the Dublin tech scene.</p>
                 </HoverCardContent>
               </TouchHoverCard></li>
             </ul>
