@@ -6,7 +6,7 @@ import {
   TouchHoverCard,
 } from "../../components/ui/hover-card"
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillX } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 
 export default function Home() {
     
@@ -30,6 +30,7 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/ebuka-amadi-obi/" target="_blank"><AiFillLinkedin size={45} className="text-[#cd9272] size-7 md:size-11"/></a>
                 <a href="https://www.instagram.com/ebuka_amadi_obi/" target="_blank"><AiFillInstagram size={45} className="text-[#cd9272] size-7 md:size-11"/></a>
                 <a href="https://x.com/ebuka_dot_dev" target="_blank"><FaXTwitter size={45} className="text-[#cd9272] size-7 md:size-11"/></a>
+                <a href="https://www.tiktok.com/@ebuka.mp4" target="_blank"><FaTiktok size={45} className="text-[#cd9272] size-7 md:size-11"/></a>
                 <div className="mx-5 md:mx-10 my-10 border-b-3 opacity-25 w-full h-1"/>
               </div>
             </div>
