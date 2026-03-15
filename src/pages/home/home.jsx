@@ -1,4 +1,5 @@
 import Header from "../../components/header";
+import Footer from "../../components/footer";
 import {
   HoverCard,
   HoverCardContent,
@@ -149,6 +150,7 @@ export default function Home() {
           />
         </div>
         <div className="colsection"></div>
+        <Footer />
       </div>
     )
 };

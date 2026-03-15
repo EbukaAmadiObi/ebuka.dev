@@ -3,6 +3,7 @@ import Home from './pages/home/home';
 import Card from './pages/card';
 import Blog from './pages/blog';
 import Projects from './pages/projects/projects';
+import Lounge from './pages/lounge';
 
 function App() {
   const routesArray = [
@@ -21,6 +22,10 @@ function App() {
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/lounge",
+        element: <Lounge />,
       },
     {
       path: "*",
