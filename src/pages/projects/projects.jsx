@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <div>
       <Header />
-      <div className='w-screen h-[85dvh] items-center flex flex-col bg-[#1f0e07]'>
+      <div className='w-full h-[85dvh] items-center flex flex-col bg-[#1f0e07]'>
         <div className="mx-auto colsection pb-20 md:pb-32">
           <h2 className="text-left">
             Projects

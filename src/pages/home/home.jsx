@@ -12,7 +12,7 @@ import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 export default function Home() {
     
     return (
-      <div className="w-screen h-dvh flex flex-col bg-[#1f0e07]">
+      <div className="w-full h-dvh flex flex-col bg-[#1f0e07]">
         <Header/>
         <div className='flex flex-col md:flex-row'>
           <div className='h-[60vh] md:h-[calc(100vh-7.5rem)] md:w-[60vw] flex items-center mx-10 md:mx-15 lg:mx-32 relative'>
@@ -36,7 +36,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="ml-auto w-screen md:w-[40vw] md:h-[calc(100vh-7.5rem)] overflow-hidden relative">
+          <div className="ml-auto w-full md:w-[40vw] md:h-[calc(100vh-7.5rem)] overflow-hidden relative">
             <picture>
               <source
                 media="(min-width:768px)"

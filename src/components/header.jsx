@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <div
-      className={`sticky top-0 z-50 w-screen max-h-12 md:max-h-12 shadow-2xl flex flex-row items-center p-4 md:p-9 bg-[#1f0e07]/40 backdrop-blur border-[#e5e5f7] transform transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}
+      className={`sticky top-0 z-50 w-full max-h-12 md:max-h-12 shadow-2xl flex flex-row items-center p-4 md:p-9 bg-[#1f0e07]/40 backdrop-blur border-[#e5e5f7] transform transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}
     >
       <a href="/">
         <img src={logo} className="w-12 md:w-20" alt="EAO Logo" href="/"/>
