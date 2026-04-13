@@ -27,7 +27,7 @@ function App() {
         path: "/lounge",
         element: <Lounge />,
       },
-    {
+{
       path: "*",
       element: <Navigate to="/" replace />,
     },

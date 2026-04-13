@@ -66,3 +66,18 @@ h4 {
 .colsection {
   @apply  w-[calc(0.8*100%)] md:w-[calc(0.625*100%)] pt-20 md:pt-32
 }
+
+@keyframes liveBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.15; }
+}
+.animate-live {
+  animation: liveBlink 1.8s ease-in-out infinite;
+}
+
+@keyframes splitFlap {
+  0%   { transform: scaleY(1);    opacity: 1;   }
+  35%  { transform: scaleY(0.04); opacity: 0.15; }
+  65%  { transform: scaleY(0.04); opacity: 0.15; }
+  100% { transform: scaleY(1);    opacity: 1;   }
+}

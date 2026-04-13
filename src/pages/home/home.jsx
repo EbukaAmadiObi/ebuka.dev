@@ -8,8 +8,25 @@ import {
 } from "../../components/ui/hover-card"
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillX } from "react-icons/ai";
 import { FaXTwitter, FaTiktok } from "react-icons/fa6";
+import { useEffect, useRef, useState } from "react";
+import { SplitFlapDisplay } from "../../components/split-flap";
+
+const PREVIOUS_CITY = 'RIGA';
+const CURRENT_CITY = 'PARIS';
+const NEXT_CITY = 'ReykjavIk';
 
 export default function Home() {
+  const travelRef = useRef(null);
+  const [travelTriggered, setTravelTriggered] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setTravelTriggered(true); },
+      { threshold: 0.25 }
+    );
+    if (travelRef.current) observer.observe(travelRef.current);
+    return () => observer.disconnect();
+  }, []);
     
     return (
       <div className="w-full h-dvh flex flex-col bg-[#1f0e07]">
@@ -132,7 +149,7 @@ export default function Home() {
               </TouchHoverCard></li>
               <li>I was also one of 20 students selected worldwide to attend {" "}<TouchHoverCard trigger="Invisible College" triggerClassName="text-[#ab795e]">
                 <HoverCardContent className="w-80 bg-[#2a1308] border-[#3e1e0f]">
-                  <p>Spent a week discussing topics like urbanism, the industrial revolution and metascience.</p> <br/> <p>Surrounded by insanely intelligent and articulate people, felt very stupid.</p> <br/>Check it out <a href="https://www.worksinprogress.news/p/apply-for-invisible-college-2025" target="_blank">here.</a>
+                  <p>Spent a week discussing topics like urbanism, the industrial revolution and metascience.</p> <br/> <p>Surrounded by insanely intelligent and articulate people, felt very outclassed.</p> <br/>Check it out <a href="https://worksinprogress.co/invisiblecollege/" target="_blank">here.</a>
                 </HoverCardContent>
               </TouchHoverCard> in Cambridge, hosted by Works in Progress</li>
               <li>I won third in the Dublin Google Hackathon in 2024 and was the regional winner for the {" "}<TouchHoverCard trigger="National AI Challenge 2024" triggerClassName="text-[#ab795e]">
@@ -149,7 +166,47 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-        <div className="colsection"></div>
+        <div className="colsection" />
+        <div
+          ref={travelRef}
+          className="w-full border-y border-[#2a1308] bg-[#080300]"
+          style={{ boxShadow: 'inset 0 4px 32px rgba(0,0,0,0.5)' }}
+        >
+          {/* Board header */}
+          <div className="w-[80%] md:w-[62.5%] mx-auto py-4 md:py-5 flex items-center justify-between border-b border-[#2a1308]">
+            <span className="font-mono text-xs md:text-sm tracking-[0.25em] text-[#ab795e] uppercase">
+              Where is Ebuka?
+            </span>
+            <div className="flex items-center gap-2">
+              <span className="size-2 rounded-full bg-green-500 animate-live" />
+              <span className="font-mono text-xs tracking-[0.2em] text-[#cd9272] uppercase">Live</span>
+            </div>
+          </div>
+
+          {/* Previously row */}
+          <div className="w-[80%] md:w-[62.5%] mx-auto py-4 md:py-6 flex flex-col md:flex-row md:items-center gap-2 md:gap-16 opacity-35 border-b border-[#2a1308]">
+            <span className="font-mono text-xs tracking-[0.2em] text-[#cd9272] uppercase md:w-28 shrink-0">
+              Previously
+            </span>
+            <SplitFlapDisplay city={PREVIOUS_CITY} isStatic={true} fontSize="clamp(1.4rem, 3.5vw, 2.8rem)" />
+          </div>
+
+          {/* Now row */}
+          <div className="w-[80%] md:w-[62.5%] mx-auto py-5 md:py-8 flex flex-col md:flex-row md:items-center gap-2 md:gap-16 border-b border-[#2a1308]">
+            <span className="font-mono text-xs tracking-[0.2em] text-[#cd9272] uppercase md:w-28 shrink-0">
+              Now
+            </span>
+            <SplitFlapDisplay city={CURRENT_CITY} triggered={travelTriggered} />
+          </div>
+
+          {/* Next row */}
+          <div className="w-[80%] md:w-[62.5%] mx-auto py-4 md:py-6 flex flex-col md:flex-row md:items-center gap-2 md:gap-16 opacity-35">
+            <span className="font-mono text-xs tracking-[0.2em] text-[#cd9272] uppercase md:w-28 shrink-0">
+              Next
+            </span>
+            <SplitFlapDisplay city={NEXT_CITY} isStatic={true} fontSize="clamp(1.4rem, 3.5vw, 2.8rem)" />
+          </div>
+        </div>
         <Footer />
       </div>
     )
