@@ -11,9 +11,9 @@ import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
 import { SplitFlapDisplay } from "../../components/split-flap";
 
-const PREVIOUS_CITY = 'PARIS';
-const CURRENT_CITY = 'ReykjavIk';
-const NEXT_CITY = 'OSLO';
+const PREVIOUS_CITY = 'ReykjavIk';
+const CURRENT_CITY = 'Oslo';
+const NEXT_CITY = 'Dublin';
 
 export default function Home() {
   const travelRef = useRef(null);
