@@ -1,7 +1,7 @@
-import Header from "../components/header";
+import Header from "@/components/header";
 
 export default function Blog() {
-    
+
   return (
     <div>
       <Header />
@@ -11,6 +11,6 @@ export default function Blog() {
       </div>
     </div>
 
-    
+
   )
 };

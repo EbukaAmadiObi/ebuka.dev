@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ';
@@ -7,11 +9,17 @@ function randomChar() {
 }
 
 function SplitFlapChar({ target, settleDelay, triggered, isStatic = false }) {
-  const [char, setChar] = useState(isStatic ? target : randomChar);
+  const [char, setChar] = useState(target);
   const [tick, setTick] = useState(0);
 
   useEffect(() => {
-    if (isStatic || !triggered) return;
+    if (isStatic) return;
+
+    if (!triggered) {
+      setChar(randomChar());
+      setTick(t => t + 1);
+      return;
+    }
 
     const intervalId = setInterval(() => {
       setChar(randomChar());

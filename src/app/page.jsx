@@ -1,15 +1,15 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+"use client";
+
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import {
-  HoverCard,
   HoverCardContent,
-  HoverCardTrigger,
   TouchHoverCard,
-} from "../../components/ui/hover-card"
+} from "@/components/ui/hover-card";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillX } from "react-icons/ai";
 import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
-import { SplitFlapDisplay } from "../../components/split-flap";
+import { SplitFlapDisplay } from "@/components/split-flap";
 
 const PREVIOUS_CITY = 'Dublin';
 const CURRENT_CITY = 'Paris';
@@ -27,7 +27,7 @@ export default function Home() {
     if (travelRef.current) observer.observe(travelRef.current);
     return () => observer.disconnect();
   }, []);
-    
+
     return (
       <div className="w-full h-dvh flex flex-col bg-[#1f0e07]">
         <Header/>
@@ -40,7 +40,7 @@ export default function Home() {
               </span>
               <h1 className="header">I build stuff with computers.</h1>
               <br/>
-              <div className="text-[#ab795e]">This is my site, here you can find out about my projects, experience and 
+              <div className="text-[#ab795e]">This is my site, here you can find out about my projects, experience and
                 other cool stuff.
               </div>
               <div className="flex flex-row gap-3 md:gap-6 items-center">
@@ -88,7 +88,7 @@ export default function Home() {
               <TouchHoverCard trigger="The US" triggerClassName="text-[#ab795e]">
                 <HoverCardContent className="w-80 bg-[#2a1308] border-[#3e1e0f]">
                   <div className="flex justify-between gap-4">
-                    Maryland, specifically. I spent 8 years there from age 2 to 10, before moving 
+                    Maryland, specifically. I spent 8 years there from age 2 to 10, before moving
                     back to Ireland. Despite my efforts I still haven't fully shaken off the accent.
                   </div>
                 </HoverCardContent>
@@ -96,13 +96,13 @@ export default function Home() {
             </p>
             <br/>
             <p>
-              I'm currently working on building community and engaging with startup ecosystems 
+              I'm currently working on building community and engaging with startup ecosystems
               worldwide as a Special Projects Associate at <a href="https://websummit.com" target="_blank">Web Summit</a>.
             </p>
             <br/>
             <p>
-              I hold a BEng. in Electronic Engineering from UCD. My bachelor's thesis was titled: 
-              "Edge AI as a Service (EAIaaS) Platform for Launching AI/ML Services." 
+              I hold a BEng. in Electronic Engineering from UCD. My bachelor's thesis was titled:
+              "Edge AI as a Service (EAIaaS) Platform for Launching AI/ML Services."
             </p>
             <br/>
             <p>
@@ -120,18 +120,18 @@ export default function Home() {
                     field for anyone interested in indie hacking or running SaaS products.
                   </div>
                 </HoverCardContent>
-              </TouchHoverCard> Fellowship with Meta & MLH (Jun 2025), where I worked 
+              </TouchHoverCard> Fellowship with Meta & MLH (Jun 2025), where I worked
               with a CentOS VPS, and containerized services.
             </p>
             <br/>
             <p>
               In my free time, I enjoy building projects.
-              Currently, I'm building an app to streamline the CV 
+              Currently, I'm building an app to streamline the CV
               tailoring process. It's called <a href="https://resumate.cv" target="_blank">Resumate.</a>
             </p>
             <br/>
             <p>
-              You're likely to find me at one of the few tech meetups in Dublin, including the ones 
+              You're likely to find me at one of the few tech meetups in Dublin, including the ones
               I help organise at <a href="https://giveago.co/" target="_blank">Give(a)Go</a>, and the
                ones I started at {" "} <a href="https://dockyard.info/" target="_blank">Dockyard</a>
             </p>

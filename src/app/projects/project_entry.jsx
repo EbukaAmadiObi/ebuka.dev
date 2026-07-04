@@ -1,4 +1,4 @@
-import Divider from "../../components/divider";
+import Divider from "@/components/divider";
 
 export default function ProjectEntry({ image, title, description, link }) {
   return (

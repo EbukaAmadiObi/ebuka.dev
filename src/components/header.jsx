@@ -1,4 +1,5 @@
-import logo from "/logo.svg"
+"use client";
+
 import { useState, useEffect, useRef } from 'react'
 
 export default function Header() {
@@ -33,7 +34,7 @@ export default function Header() {
       className={`sticky top-0 z-50 w-full max-h-12 md:max-h-12 shadow-2xl flex flex-row items-center p-4 md:p-9 bg-[#1f0e07]/40 backdrop-blur border-[#e5e5f7] transform transition-transform duration-300 ease-in-out ${hidden ? '-translate-y-full' : 'translate-y-0'}`}
     >
       <a href="/">
-        <img src={logo} className="w-12 md:w-20" alt="EAO Logo" href="/"/>
+        <img src="/logo.svg" className="w-12 md:w-20" alt="EAO Logo" href="/"/>
       </a>
       <div className="w-full flex justify-end gap-5 md:gap-8">
         <a className="" href="/blog">
