@@ -2,6 +2,29 @@ import Header from "@/components/header";
 import Divider from "@/components/divider";
 import ProjectEntry from "./project_entry";
 
+const title = "Projects — Ebuka Amadi-Obi";
+const description =
+  "Projects by Ebuka Amadi-Obi: Resumate (AI CV tailoring), an edge AI platform thesis, Lighthouse, Agent Apollo, and more.";
+
+export const metadata = {
+  title,
+  description,
+  alternates: { canonical: "/projects" },
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    url: "/projects",
+    images: ["/ogImage.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/ogImage.png"],
+  },
+};
+
 export default function Projects() {
 
   return (
