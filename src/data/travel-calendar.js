@@ -16,7 +16,7 @@
 export const TRAVEL_CALENDAR = [
   { city: 'Dublin', from: '2026-05-01' },
   { city: 'Paris', from: '2026-07-20' },
-  { city: 'London', from: '2026-25-07' },
+  { city: 'London', from: '2026-07-25' },
   { city: 'Manchester', from: '2026-08-10' },
   { city: 'Copenhagen', from: '2026-08-17' },
   { city: 'Dublin', from: '2026-08-29' },
